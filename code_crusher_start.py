@@ -39,6 +39,18 @@ LOSE = -1
 #  Insert your implementation of createBoard here
 #
 
+
+def createBoard(nmrLinhas, nmrColunas, numero):
+  tabuleiro = []
+  for i in range(nmrLinhas):
+    coluna = [0] * nmrColunas;
+    tabuleiro.append(coluna)
+  
+  for i in range(nmrLinhas):
+    for j in range(nmrColunas):
+      tabuleiro[i][j] = randrange(0, numero)
+
+  return tabuleiro
 #
 #  Modify the board by swapping two pieces.
 #
