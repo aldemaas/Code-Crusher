@@ -62,6 +62,11 @@ def createBoard(nmrLinhas, nmrColunas, numero):
 #  Returns: None -- the game board passed as a parameter is modified
 #
 def swap(board, r1, c1, r2, c2):
+  elemento1 = board[r1][c1]
+  elemento2 = board[r2][c2]
+  temporario = elemento1
+  board[r1][c1] = elemento2
+  board[r2][c2] = temporario
   pass
 
 #
